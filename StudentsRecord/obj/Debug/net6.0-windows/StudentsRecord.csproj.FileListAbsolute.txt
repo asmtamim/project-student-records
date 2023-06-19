@@ -1,0 +1,48 @@
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.exe
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.deps.json
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.runtimeconfig.json
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.pdb
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.AssemblyReference.cache
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.Form1.resources
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.GenerateResource.cache
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.AssemblyInfoInputs.cache
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.AssemblyInfo.cs
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.CoreCompileInputs.cache
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.dll
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\refint\StudentsRecord.dll
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.pdb
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.genruntimeconfig.cache
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\ref\StudentsRecord.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projects\StudentsRecord\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projects\StudentsRecord\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.CopyComplete
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.exe
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.deps.json
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.runtimeconfig.json
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\StudentsRecord.pdb
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.AssemblyReference.cache
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.Form1.resources
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.GenerateResource.cache
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.AssemblyInfoInputs.cache
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.AssemblyInfo.cs
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.CoreCompileInputs.cache
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.csproj.CopyComplete
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\refint\StudentsRecord.dll
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.pdb
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\StudentsRecord.genruntimeconfig.cache
+E:\Projects\StudentsRecord - Copy\StudentsRecord\obj\Debug\net6.0-windows\ref\StudentsRecord.dll
