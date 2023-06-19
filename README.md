@@ -1,2 +1,2 @@
-# project-student-records
-A simple CRUD windows form application
+# Students Information Record Booth
+A simple CRUD Windows form application
