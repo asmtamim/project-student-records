@@ -99,7 +99,7 @@ namespace StudentsRecord
             DataTable dataTable = new DataTable();
 
             sqlConn.Open();
-            string query = "SELECT * FROM tbl_studinfo";
+            string query = "SELECT stu_roll, stu_name, stu_gender, stu_dob, stu_email FROM tbl_studinfo";
 
             using (SqlCommand sqlCmd = new SqlCommand(query, sqlConn))
             {
