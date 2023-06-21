@@ -67,7 +67,51 @@ namespace StudentsRecord
         {
             display_data();
             clear_fields();
+
+            DataTable data = GetDataFromDatabase();
+
+            using (StreamWriter writer = new StreamWriter("E:\\Projects\\Student-records\\ExportedData.csv"))
+            {
+                for (int i = 0; i < data.Columns.Count; i++)
+                {
+                    writer.Write(data.Columns[i].ColumnName);
+                    if (i < data.Columns.Count - 1)
+                        writer.Write(",");
+                }
+                writer.WriteLine();
+
+                foreach (DataRow row in data.Rows)
+                {
+                    for (int i = 0; i < data.Columns.Count; i++)
+                    {
+                        writer.Write(row[i].ToString());
+                        if (i < data.Columns.Count - 1)
+                            writer.Write(",");
+                    }
+                    writer.WriteLine();
+                }
+            }
+            MessageBox.Show("Data exported to local storage.");
         }
+
+        private DataTable GetDataFromDatabase()
+        {
+            DataTable dataTable = new DataTable();
+
+            sqlConn.Open();
+            string query = "SELECT * FROM tbl_studinfo";
+
+            using (SqlCommand sqlCmd = new SqlCommand(query, sqlConn))
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter(sqlCmd))
+                {
+                    adapter.Fill(dataTable);
+                }
+            }
+            sqlConn.Close();
+            return dataTable;
+        }
+
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
