@@ -1,5 +1,6 @@
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -20,16 +21,38 @@ namespace StudentsRecord
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            sqlConn.Open();
-            string query = "INSERT INTO tbl_studinfo (stu_roll, stu_name, stu_gender, stu_dob, stu_email)" +
-                              "values('" + txtRoll.Text + "','" + txtName.Text + "','" + cmbGender.Text + "','" + dtpBirthday.Text + "','" + txtEmail.Text + "')";
+            if (ValidateEmail())
+            {
+                sqlConn.Open();
+                string query = "INSERT INTO tbl_studinfo (stu_roll, stu_name, stu_gender, stu_dob, stu_email)" +
+                                  "values('" + txtRoll.Text + "','" + txtName.Text + "','" + cmbGender.Text + "','" + dtpBirthday.Text + "','" + txtEmail.Text + "')";
 
-            SqlCommand sqlCmd = new SqlCommand(query, sqlConn);
-            sqlCmd.ExecuteNonQuery();
-            sqlConn.Close();
-            clear_fields();
-            display_data();
-            MessageBox.Show("Data saved successfully.");
+                SqlCommand sqlCmd = new SqlCommand(query, sqlConn);
+                sqlCmd.ExecuteNonQuery();
+                sqlConn.Close();
+                clear_fields();
+                display_data();
+                MessageBox.Show("Data saved successfully.");
+            }
+            else
+            {
+                MessageBox.Show("Invalid email address. Enter a valid email.");
+                txtEmail.Clear();
+            }
+        }
+
+        private bool ValidateEmail()
+        {
+            string email = txtEmail.Text.Trim();
+
+            if (string.IsNullOrEmpty(email))
+            {
+                return false;
+            }
+
+            string emailPattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+            Regex regex = new Regex(emailPattern);
+            return regex.IsMatch(email);
         }
 
         public void display_data()
@@ -70,7 +93,7 @@ namespace StudentsRecord
 
             DataTable data = GetDataFromDatabase();
 
-            using (StreamWriter writer = new StreamWriter("E:\\Projects\\Student-records\\ExportedData.csv"))
+            using (StreamWriter writer = new StreamWriter("E:\\Projects\\StudentsRecord\\ExportedData.csv"))
             {
                 for (int i = 0; i < data.Columns.Count; i++)
                 {
@@ -136,16 +159,24 @@ namespace StudentsRecord
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            sqlConn.Open();
-            string query = "UPDATE tbl_studinfo SET stu_roll= '" + txtRoll.Text + "', stu_name= '" + txtName.Text + "', stu_gender= '" + cmbGender.Text + "', stu_dob= '" + dtpBirthday.Text + "', stu_email= '" + txtEmail.Text + "' " +
-                               "WHERE stu_roll = '" + txtRoll.Text + "'";
+            if (ValidateEmail())
+            {
+                sqlConn.Open();
+                string query = "UPDATE tbl_studinfo SET stu_roll= '" + txtRoll.Text + "', stu_name= '" + txtName.Text + "', stu_gender= '" + cmbGender.Text + "', stu_dob= '" + dtpBirthday.Text + "', stu_email= '" + txtEmail.Text + "' " +
+                                   "WHERE stu_roll = '" + txtRoll.Text + "'";
 
-            SqlCommand sqlCmd = new SqlCommand(query, sqlConn);
-            sqlCmd.ExecuteNonQuery();
-            sqlConn.Close();
-            clear_fields();
-            display_data();
-            MessageBox.Show("Data has been updated successfully.");
+                SqlCommand sqlCmd = new SqlCommand(query, sqlConn);
+                sqlCmd.ExecuteNonQuery();
+                sqlConn.Close();
+                clear_fields();
+                display_data();
+                MessageBox.Show("Data has been updated successfully.");
+            }
+            else
+            {
+                MessageBox.Show("Invalid email address. Enter a valid email.");
+                txtEmail.Clear();
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
